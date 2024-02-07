@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rose on Touch</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #roseImage {
+            display: none; /* Hide the image initially */
+            max-width: 100%;
+            max-height: 100vh;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+<img id="roseImage" src="rose.jpg" alt="Rose">
+
+<script>
+    document.addEventListener('touchstart', function() {
+        var image = document.getElementById('roseImage');
+        image.style.display = 'block'; // Show the rose image on touch
+    });
+</script>
+
+</body>
+</html>
